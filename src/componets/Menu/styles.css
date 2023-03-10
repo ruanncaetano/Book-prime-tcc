@@ -1,0 +1,122 @@
+:root {
+  font-size: 16px;
+  --royal-blue-light: rgba(210, 233, 248, 0.849);
+  --royal-blue-dark: rgba(110, 137, 145, 0.473);
+  --white: #fff;
+  --blacl-padrao: #000000;
+  --backgroud: #e2e3e9;
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.header2 {
+  display: flex;
+  width: 90%;
+  margin: auto auto;
+  align-items: center;
+  min-width: 650px;
+  justify-content: space-between;
+  background: var(--royal-blue-light);
+  height: 8rem;
+  padding: 2.5rem;
+  border-radius: 15px;
+}
+
+.logo {
+  width: 15em;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.menu a {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.menu a:hover {
+  background: var(--royal-blue-dark);
+}
+
+.label-menu,
+.checkbox {
+  display: none;
+}
+
+@media (max-width: 2000px) {
+  .menu {
+    display: block;
+    position: absolute;
+    top: 4.6875rem;
+    left: 0;
+    background: var(--royal-blue-light);
+    text-align: center;
+    width: 100%;
+    height: 0;
+    z-index: 1;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  .menu a {
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+  }
+  .label-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--blacl-padrao);
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+  .hamburger {
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+  }
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+  }
+  .checkbox:checked ~ .menu {
+    height: calc(100vh - 4.6875rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .checkbox:checked ~ .label-menu .hamburger {
+    border-top-color: transparent;
+  }
+  .checkbox:checked ~ .label-menu .hamburger::before {
+    transform: rotate(135deg);
+  }
+  .checkbox:checked ~ .label-menu .hamburger::after {
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+  }
+}
+.icon {
+  color: black;
+  font-size: 1.5rem;
+  padding-right: 5px;
+}
+.list {
+  font-size: 15px;
+}
+.linhas {
+  margin-top: 10px;
+}

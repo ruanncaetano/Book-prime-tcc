@@ -1,0 +1,39 @@
+h1 {
+  width: 80%;
+  margin: auto auto;
+  margin-top: 1.5em;
+}
+.banner {
+  width: 65%;
+  margin: auto auto;
+  display: list-item;
+  margin-top: 2em;
+}
+.texto {
+  width: 80%;
+  margin: auto auto;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  display: list-item;
+  min-width: 650px;
+  font-size: 22px;
+  list-style-type: none;
+}
+.box-in {
+  background-color: rgba(210, 233, 248, 0.849);
+  border-radius: 1em;
+  margin-left: 2em;
+  width: 16em;
+}
+.TBox {
+  width: 55em;
+  margin: auto;
+  display: block;
+}
+.carousel {
+  width: 70%;
+  margin: auto;
+}
+.imagem {
+  width: 100%;
+}

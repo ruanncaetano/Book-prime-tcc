@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  background-color: rgba(210, 233, 248, 0.849);
+  width: 90%;
+  margin: auto auto;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 650px;
+  height: 8rem;
+  padding: 2.5rem;
+  border-radius: 15px;
+}
+div img {
+  width: 14.5em;
+}
+.header div a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 3em;
+  color: black;
+}
+header div a:hover {
+  font-weight: bold;
+  padding-right: 10px;
+}

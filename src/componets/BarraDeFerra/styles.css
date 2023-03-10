@@ -1,0 +1,14 @@
+.elementos {
+  display: flex;
+}
+.elementos ul {
+  list-style: none;
+  width: 2em;
+}
+.elementos ul li {
+  width: 5em;
+}
+.elementos div {
+  /* border: 1px black solid; */
+  margin-right: 1em;
+}
